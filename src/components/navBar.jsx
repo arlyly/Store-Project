@@ -19,9 +19,6 @@ export default function NavBar() {
             <Link to="/profile">Profile</Link>
             </li>
             <li className={classes.navItem}>
-            <Link to="/signUp">Sign Up</Link>
-            </li>
-            <li className={classes.navItem}>
             <Link to="/login">Login</Link>
             </li>
             </ul> 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import classes from './products.module.css'
 import { useState, useEffect } from "react"
 export default function Products() {
@@ -19,7 +20,7 @@ useEffect(() => {
     return (
 
         <>
-        <main className={classes.productList}>
+        <main className={classes.main}>
         <h1>Product List</h1>
         <ul>
             {
@@ -29,7 +30,8 @@ useEffect(() => {
                     <p>Category: {category}</p>
                     <p>Price: ${price}</p>
                     <img src={image} alt={title}/>
-
+                    <button>Buy Now</button>
+                        <Link to={`/products/${id} `} className={classes.link}>Product Details</Link>
                   </li>  
                 ))}
         </ul>
