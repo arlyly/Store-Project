@@ -95,7 +95,7 @@ export default function GroupProducts() {
                 <p className={classes.productPrice}>Price: ${product.price}</p>
                 <div className={classes.productButtons}>
                   <button className={classes.buyButton}>Buy Now</button>
-                  <button className={classes.addToCartButton}>Add to Cart</button>
+                  <button className={classes.addToCartButton} style={{ marginLeft: '20px' }}>Add to Cart</button>
                 </div>
               </div>
             ))}

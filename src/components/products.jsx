@@ -18,10 +18,9 @@ useEffect(() => {
 }, [])
 
     return (
-
         <>
+        <h1>All Products </h1>
         <main className={classes.main}>
-        <h1>Product List</h1>
         <ul>
             {
                 Products.map(({id,title,category,price,image}) => (
