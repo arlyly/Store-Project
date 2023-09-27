@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     background-color: gold;
-    color: coral;
+    color: hsl(245, 54%, 28%);
     padding: 1rem;
     height: 60px;
   }
@@ -32,3 +32,7 @@
     margin-bottom: 30px;
     
   }
+
+  
+  
+  

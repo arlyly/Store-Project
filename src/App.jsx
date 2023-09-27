@@ -6,6 +6,7 @@ import SingleProduct from "./components/singleProduct"
 import SignUp from "./components/signUp"
 import Login from "./components/login"
 import Profile from "./components/profile"
+import Cart from "./components/cart"
 import GroupProducts from "./components/groupProducts"
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="/products/:id" element={<SingleProduct />} />
       <Route path="/signUp" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/cart" element={<Cart />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/groupProducts" element={<GroupProducts />} />
       </Routes>
