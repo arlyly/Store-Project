@@ -17,13 +17,10 @@ export default function NavBar() {
             <Link to="/groupProducts">Products by Category</Link>
             </li>
             <li className={classes.navItem}>
-            <Link to="/profile">Profile</Link>
-            </li>
-            <li className={classes.navItem}>
             <Link to="/login">Login</Link>
             </li>
             <li className={classes.navItem}>
-            <Link to="/cart">{<Cart />}</Link>
+            <Link className={classes.cartIcon}to="/cart">{<Cart />}</Link>
             </li>
             </ul> 
         </nav>
