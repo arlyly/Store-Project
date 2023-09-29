@@ -2,7 +2,7 @@ import classes from './singleProduct.module.css'
 import { Link, useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
-export default function SingleProduct() {
+export default function SingleProduct({ addToCart }) {
     const {id} = useParams();
     const [product, setProduct] = useState([])
    useEffect(()=> {
@@ -29,7 +29,7 @@ export default function SingleProduct() {
             <p>Price: ${price}</p>
             <p>Description: {description}</p>
             <p>Category: {category}</p>
-            <button>Add to Cart</button>
+                <button onClick={() => addToCart({ id, title, price, image })}>Add to Cart</button>
         </div>
         </>
     )

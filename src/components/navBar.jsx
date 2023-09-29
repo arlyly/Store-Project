@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import classes from './navBar.module.css'
-import Cart from "./cart"
-export default function NavBar() {
+export default function NavBar({cartItemCount}) {
     return (
 
         <>
@@ -20,7 +19,7 @@ export default function NavBar() {
             <Link to="/login">Login</Link>
             </li>
             <li className={classes.navItem}>
-            <Link className={classes.cartIcon}to="/cart">{<Cart />}</Link>
+                <Link to="/ShoppingCart">Cart({cartItemCount})</Link>
             </li>
             </ul> 
         </nav>

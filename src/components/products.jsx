@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import classes from './products.module.css'
 import { useState, useEffect } from "react"
-export default function Products() {
+
+export default function Products({ addToCart }) {
 const [Products, setProducts] = useState([]);
 useEffect(() => {
     async function fetchData() {
@@ -29,12 +30,12 @@ useEffect(() => {
                     <p>Category: {category}</p>
                     <p>Price: ${price}</p>
                     <img src={image} alt={title}/>
-                    <button>Buy Now</button>
+                    <button onClick={() => addToCart({ id, title, price, image })}>Add to Cart</button>
                         <Link to={`/products/${id} `} className={classes.link}>Product Details</Link>
                   </li>  
                 ))}
         </ul>
         </main>
         </>
-    )
+    );
 }

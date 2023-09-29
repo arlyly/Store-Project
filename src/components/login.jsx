@@ -17,7 +17,7 @@ export default function Login() {
         if (user) {
           setError("");
           console.log("Login successful!");
-          navigate("/cart");
+          navigate("/products");
         } else {
           setError("Invalid username or password.");
         }
